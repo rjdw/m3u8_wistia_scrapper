@@ -28,7 +28,8 @@ Or honestly any platform with some minimal edits
     - WILL OVERWRITE SAME NAME FILES (files named `video_{i}.mp4` for i-th video)
     - Edit `MAX_WORKERS` for more threads.
     - Edit download TARGET_DIR and filename for specifics
-    - Probably works. Lowkey didn't test this, but the download_all_videos.py works fs.
+    - FYI: No promises concurrent download is faster than `download_all_videos.py` (non-concurrent). Depends on internet bandwidth, number of workers, cpu, download location, CDN bottlenecking, etc.
+        - But for the most part, should be faster....
 
 3. Extra:
     - `download_all_videos.sh` for bash script
