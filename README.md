@@ -21,13 +21,16 @@ Or honestly any platform with some minimal edits
     - Generated file from web scrapper contains all streamed and embedded
     video urls from Wistia platform.
     - Easy to edit this to other platforms, just look at code.
+2. `python parse_m3u8_list.py`
+    - Remove duplicates unless you want to download the same thing multiple times.
 2. `python download_all_concurrent.py`
     - Goes through generated list and downloads them concurrently.
     - WILL OVERWRITE SAME NAME FILES (files named `video_{i}.mp4` for i-th video)
     - Edit `MAX_WORKERS` for more threads.
     - Edit download TARGET_DIR and filename for specifics
+    - Probably works. Lowkey didn't test this, but the download_all_videos.py works fs.
+
 3. Extra:
     - `download_all_videos.sh` for bash script
         - might need `chmod +x download_all_videos.sh`
     - `download_all_videos.py` for non-concurrent Python script if your computer is potato or you dislike speed.
-        
